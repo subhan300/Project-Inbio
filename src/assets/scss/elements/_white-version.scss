@@ -736,7 +736,7 @@ body.white-version {
         .primary-menu {
             a {
                 color: var(--color-body-white);
-                font-weight: 600;
+                font-weight: var(--s--semi-bold) !important;
             }
         }
     }

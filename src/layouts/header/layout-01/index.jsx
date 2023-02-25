@@ -62,8 +62,10 @@ const Header = ({ className, data }) => {
                                 <div className="header-right d-flex d-xl-block">
                                     <Button
                                         path="#"
-                                        className={`mr--10 p-4 d-flex align-items-center justify-content-center d-xl-inline-block`}
+                                        className={`mr--10 p-4 d-flex align-items-center justify-content-center 
+                                        d-xl-inline-block`}
                                         onClick={() => toggleSwitch()}
+                                        styles={{ cursor: "pointer" }}
                                     >
                                         <span
                                             className={
