@@ -31,6 +31,7 @@ const BlogCard = ({
                             <Image src={image.src} alt={image.alt || title} />
                         </a>
                     </div>
+
                     <div className="content">
                         <div className="category-info">
                             <div className="category-list">

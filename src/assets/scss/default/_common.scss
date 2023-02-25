@@ -28,7 +28,6 @@
     &::before {
         content: "";
         position: absolute;
-        transition: var(--transition);
         width: 100%;
         height: 100%;
         border-radius: 6px;
@@ -230,7 +229,6 @@
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 border-radius: 6px;
-                transition: var(--transition);
                 background: var(--background-color-1);
                 position: relative;
                 z-index: 1;
@@ -273,7 +271,6 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    transition: var(--transition);
                     width: 100%;
                     height: 100%;
                     border-radius: 6px;
@@ -298,7 +295,6 @@
 
                 svg {
                     color: var(--color-lightn);
-                    transition: var(--transition);
                     stroke-width: 2;
                     position: relative;
                     z-index: 2;
@@ -485,4 +481,19 @@ ul {
 .container,
 .row {
     --bs-gutter-x: 30px;
+}
+
+.slide .social-share-inner-left .social-share li a {
+    transition: none !important;
+}
+
+.footer-style-2 .social-icone-wrapper .social-share li a::after,
+a.rn-btn,
+button.rn-btn {
+    transition: none !important;
+}
+a.rn-btn,
+button.rn-btn,
+.contact-about-area .social-area .social-icone a {
+    transition: none !important;
 }

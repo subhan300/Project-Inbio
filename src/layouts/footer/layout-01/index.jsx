@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import cn from "clsx";
 import Logo from "@components/logo";
 import { ImageType } from "@utils/types";
 
 const Footer = ({ className, data }) => {
-    const { theme } = useContext(StateContext);
-
     return (
         <div
             className={cn(
@@ -16,11 +14,7 @@ const Footer = ({ className, data }) => {
                 className
             )}
         >
-            <div
-                className={`container ${
-                    theme == "light" ? " white-version" : ""
-                }`}
-            >
+            <div className="container ">
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="footer-area text-center">

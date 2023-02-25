@@ -131,3 +131,7 @@
     border-radius: 5px;
     margin-top: -6px;
 }
+
+a.rn-btn::before {
+    transition: none !important;
+}

@@ -45,11 +45,7 @@ const Footer = ({ className, data }) => {
                             )}
                         </div>
                         {data?.socials && (
-                            <div
-                                className={`social-icone-wrapper              ${
-                                    theme == "light" ? " white-version" : ""
-                                } `}
-                            >
+                            <div className="social-icone-wrapper">
                                 <Social>
                                     {data.socials?.map((social) => (
                                         <SocialLink
