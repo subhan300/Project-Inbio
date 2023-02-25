@@ -13,7 +13,7 @@ const Button = ({
     path,
     icon,
     iconPosition,
-    styles
+    styles,
 }) => {
     if (path) {
         const internal = /^\/(?!\/)/.test(path);
@@ -51,7 +51,7 @@ const Button = ({
                     aria-label={label}
                     onClick={onClick}
                     className={cn(className, "rn-btn")}
-                    href={path}
+                    // href={"/"}
                     style={styles}
                 >
                     {icon && iconPosition === "left" && (

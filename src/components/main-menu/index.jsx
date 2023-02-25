@@ -20,7 +20,7 @@ const MainMenu = ({ menus, className, navId }) => {
                     >
                         <Link
                             activeClass="active"
-                            className="nav-link smoth-animation"
+                            className="nav-link smoth-animation font-semibold"
                             // className="nav-link"
                             // href={`${path}`}
                             to={subMenu ? "" : path}
@@ -43,7 +43,7 @@ const MainMenu = ({ menus, className, navId }) => {
                                 {subMenu?.map((item) => (
                                     <li key={item.id}>
                                         <Link
-                                            className="nav-link"
+                                            className="nav-link font-semibold"
                                             to={item.path}
                                         >
                                             {item.icon && (

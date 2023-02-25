@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 function useDynamicIconImport(name, options = {}) {
     const ImportedIconRef = useRef(null);
     const [loading, setLoading] = useState(false);
+    // subhan code
     const [resIcon, setresIcon] = useState("");
 
     const [error, setError] = useState();
@@ -16,9 +17,9 @@ function useDynamicIconImport(name, options = {}) {
                 const loadIcon = await import(`react-feather`);
                 const resIcon = await loadIcon[name];
                 ImportedIconRef.current = resIcon;
+                // subhan code
                 setresIcon(resIcon);
 
-                console.log(ImportedIconRef.current);
                 if (!ImportedIconRef.current) {
                     const { default: namedImport } = await import(
                         `../assets/fonts/${name}.svg`
@@ -26,7 +27,6 @@ function useDynamicIconImport(name, options = {}) {
                     ImportedIconRef.current = namedImport;
                 }
             } catch (err) {
-                console.log("err", err);
                 if (onError) {
                     onError(err);
                 }
